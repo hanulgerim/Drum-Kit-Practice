@@ -1,0 +1,42 @@
+// This is how you can use HIGHER ORDER FUNCTION. (and debug feat.)
+We could write a fuction called calculator doing one task at a time. ex) multiply.
+then you'd code:
+function calculator(num1, num2) {return num1 * num2; }
+then call calculator(2,3;).
+This would be annoying because if I want to add, I'd have to code calculator functionto be addition now.
+
+OR you can make each function for 4 types (like below) and use HIGHER FUNCTION FUNCTION by include a function as INPUT!
+
+For ex) function calculator (num1, num2, operator){
+  return operator(num1, num2);
+}
+
+
+
+CODE itself---------
+
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+function subtract(num1, num2) {
+  return num1 - num2;
+}
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+
+function divide(num1, num2) {
+  return num1 / num2;
+}
+
+function calculator(num1, num2, operator) {
+  return operator(num1, num2);
+}
+
+NOW below are usable: 
+
+calculator (num1, num2, subtract);
+
+calculator (num1, num2, divde);
